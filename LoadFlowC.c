@@ -1,4 +1,7 @@
 
+/*
+This code is authored by Jithin as part of completion of course on C programming
+*/
 #include<stdio.h>
 #include<conio.h>
 
@@ -105,7 +108,7 @@ read_data()
 		printf("Q (in MVAR)\t:");
 		scanf("%f",&s[i].img);
 		s[i].img/=585;
-		
+
 	}
 	for(i=0;i<4;i++)
 	{
@@ -113,7 +116,7 @@ read_data()
 		V[i].img=0;
 		V_polar[i].r=1;
 		V_polar[i].theta=0;
-		
+
 	}
 	clr()
 }
@@ -157,7 +160,7 @@ return;
 void Gauss_Seidel()
 {
 	int i,j;
-	
+
 	for(i=0;i<5;i++)
 	{
 		for(j=1;j<=3,j++)
@@ -169,7 +172,7 @@ void Gauss_Seidel()
 		find_Q(0);
 		find_Q(4);
 	}
-	
+
 }
 
 //this fumction will fing the real power for the specified bus
@@ -215,4 +218,3 @@ void clr()
 	clrscr();
 	printf("\t\t Load Flow Analysis (Kerala)\n");
 }
-
